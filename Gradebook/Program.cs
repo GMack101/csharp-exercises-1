@@ -12,6 +12,7 @@ namespace Gradebook
             List<double> grades = new List<double>();
             string newStudent;
 
+
             Console.WriteLine("Enter your students (or ENTER to finish):");
             do
             {
@@ -22,6 +23,14 @@ namespace Gradebook
                 }
             }
             while (newStudent != "");
+
+
+            // Write an index based for loop to print the students list
+            for (int i = 0; i < students.Count; i++)
+            {
+                Console.WriteLine(i + " " + students[i]);
+            }
+
 
             // Get student grades
             foreach (string student in students)
